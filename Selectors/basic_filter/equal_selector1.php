@@ -9,30 +9,19 @@
     <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <link rel="stylesheet" href="/resources/demos/style.css">
 
-    <style>
-        div, span {
-            width: 120px;
-            height: 40px;
-            float: left;
-            padding: 10px;
-            margin: 10px;
-            background-color: #EEEEEE;
-        }
-    </style>
-
-
 </head>
 
 <body>
 
-<div class="myclass">div class="notMe"</div>
-<div class="myclass otherclass">div class="myClass"</div>
-<span class="myclass otherclass">span class="myClass"</span>
-
+<table border="1">
+    <tr><td>TD #0</td><td>TD #1</td><td>TD #2</td></tr>
+    <tr><td>TD #3</td><td>TD #4</td><td>TD #5</td></tr>
+    <tr><td>TD #6</td><td>TD #7</td><td>TD #8</td></tr>
+</table>
 
 
 <script>
-    $( ".myclass.otherclass" ).css( "border", "13px solid red" );
+    $( "td:eq( 2 )" ).css( "color", "red" );
 </script>
 
 

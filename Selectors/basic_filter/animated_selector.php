@@ -10,29 +10,37 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
 
     <style>
-        div, span {
-            width: 120px;
-            height: 40px;
+        div {
+            background: yellow;
+            border: 1px solid #AAA;
+            width: 80px;
+            height: 80px;
+            margin: 0 5px;
             float: left;
-            padding: 10px;
-            margin: 10px;
-            background-color: #EEEEEE;
+        }
+        div.colored {
+            background: green;
         }
     </style>
-
 
 </head>
 
 <body>
 
-<div class="myclass">div class="notMe"</div>
-<div class="myclass otherclass">div class="myClass"</div>
-<span class="myclass otherclass">span class="myClass"</span>
-
+<button id="run">Run</button>
+<div></div>
+<div id="mover"></div>
+<div></div>
 
 
 <script>
-    $( ".myclass.otherclass" ).css( "border", "13px solid red" );
+    $( "#run" ).click(function() {
+        $( "div:animated" ).toggleClass( "colored" );
+    });
+    function animateIt() {
+        $( "#mover" ).slideToggle( "slow", animateIt );
+    }
+    animateIt();
 </script>
 
 

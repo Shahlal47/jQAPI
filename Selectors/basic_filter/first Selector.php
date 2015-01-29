@@ -10,29 +10,26 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
 
     <style>
-        div, span {
-            width: 120px;
-            height: 40px;
-            float: left;
-            padding: 10px;
-            margin: 10px;
-            background-color: #EEEEEE;
+        td {
+            color: blue;
+            font-weight: bold;
         }
     </style>
-
 
 </head>
 
 <body>
 
-<div class="myclass">div class="notMe"</div>
-<div class="myclass otherclass">div class="myClass"</div>
-<span class="myclass otherclass">span class="myClass"</span>
+<table>
+    <tr><td>Row 1</td></tr>
+    <tr><td>Row 2</td></tr>
+    <tr><td>Row 3</td></tr>
+</table>
 
 
 
 <script>
-    $( ".myclass.otherclass" ).css( "border", "13px solid red" );
+    $( "tr:first" ).css( "font-style", "italic" );
 </script>
 
 

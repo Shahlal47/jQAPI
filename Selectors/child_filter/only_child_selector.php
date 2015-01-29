@@ -10,29 +10,41 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
 
     <style>
-        div, span {
-            width: 120px;
-            height: 40px;
+        div {
+            width: 100px;
+            height: 80px;
+            margin: 5px;
             float: left;
-            padding: 10px;
-            margin: 10px;
-            background-color: #EEEEEE;
+            background: #b9e;
         }
     </style>
-
 
 </head>
 
 <body>
 
-<div class="myclass">div class="notMe"</div>
-<div class="myclass otherclass">div class="myClass"</div>
-<span class="myclass otherclass">span class="myClass"</span>
-
+<div>
+    <button>Sibling!</button>
+    <button>Sibling!</button>
+</div>
+<div>
+    <button>Sibling!</button>
+</div>
+<div>
+    None
+</div>
+<div>
+    <button>Sibling!</button>
+    <button>Sibling!</button>
+    <button>Sibling!</button>
+</div>
+<div>
+    <button>Sibling!</button>
+</div>
 
 
 <script>
-    $( ".myclass.otherclass" ).css( "border", "13px solid red" );
+    $( "div button:only-child" ).text( "Alone" ).css( "border", "2px blue solid" );
 </script>
 
 

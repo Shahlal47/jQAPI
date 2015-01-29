@@ -10,29 +10,34 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
 
     <style>
-        div, span {
-            width: 120px;
-            height: 40px;
-            float: left;
-            padding: 10px;
-            margin: 10px;
-            background-color: #EEEEEE;
+        .focused {
+            background: #abcdef;
         }
     </style>
-
 
 </head>
 
 <body>
 
-<div class="myclass">div class="notMe"</div>
-<div class="myclass otherclass">div class="myClass"</div>
-<span class="myclass otherclass">span class="myClass"</span>
-
+<div id="content">
+    <input tabIndex="1">
+    <input tabIndex="2">
+    <select tabIndex="3">
+        <option>select menu</option>
+    </select>
+    <div tabIndex="4">
+        a div
+    </div>
+</div>
 
 
 <script>
-    $( ".myclass.otherclass" ).css( "border", "13px solid red" );
+    $( "#content" ).delegate( "*", "focus blur", function() {
+        var elem = $( this );
+        setTimeout(function() {
+            elem.toggleClass( "focused", elem.is( ":focus" ) );
+        }, 0 );
+    });
 </script>
 
 

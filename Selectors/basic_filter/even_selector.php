@@ -10,29 +10,25 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
 
     <style>
-        div, span {
-            width: 120px;
-            height: 40px;
-            float: left;
-            padding: 10px;
-            margin: 10px;
-            background-color: #EEEEEE;
+        table {
+            background: #eee;
         }
     </style>
-
 
 </head>
 
 <body>
 
-<div class="myclass">div class="notMe"</div>
-<div class="myclass otherclass">div class="myClass"</div>
-<span class="myclass otherclass">span class="myClass"</span>
-
+<table border="1">
+    <tr><td>Row with Index #0</td></tr>
+    <tr><td>Row with Index #1</td></tr>
+    <tr><td>Row with Index #2</td></tr>
+    <tr><td>Row with Index #3</td></tr>
+</table>
 
 
 <script>
-    $( ".myclass.otherclass" ).css( "border", "13px solid red" );
+    $( "tr:even" ).css( "background-color", "#bbf" );
 </script>
 
 

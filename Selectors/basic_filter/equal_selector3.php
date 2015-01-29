@@ -10,29 +10,31 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
 
     <style>
-        div, span {
-            width: 120px;
-            height: 40px;
-            float: left;
-            padding: 10px;
-            margin: 10px;
-            background-color: #EEEEEE;
+        .foo {
+            color: blue;
+            background-color: yellow;
         }
     </style>
-
 
 </head>
 
 <body>
 
-<div class="myclass">div class="notMe"</div>
-<div class="myclass otherclass">div class="myClass"</div>
-<span class="myclass otherclass">span class="myClass"</span>
 
+<ul class="nav">
+    <li>List 1, item 1</li>
+    <li>List 1, item 2</li>
+    <li>List 1, item 3</li>
+</ul>
+<ul class="nav">
+    <li>List 2, item 1</li>
+    <li>List 2, item 2</li>
+    <li>List 2, item 3</li>
+</ul>
 
 
 <script>
-    $( ".myclass.otherclass" ).css( "border", "13px solid red" );
+    $( "li:eq(-2)" ).addClass( "foo" );
 </script>
 
 

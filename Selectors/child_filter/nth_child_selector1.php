@@ -10,29 +10,42 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
 
     <style>
-        div, span {
-            width: 120px;
-            height: 40px;
+        div {
             float: left;
-            padding: 10px;
-            margin: 10px;
-            background-color: #EEEEEE;
+        }
+        span {
+            color: blue;
         }
     </style>
-
 
 </head>
 
 <body>
 
-<div class="myclass">div class="notMe"</div>
-<div class="myclass otherclass">div class="myClass"</div>
-<span class="myclass otherclass">span class="myClass"</span>
-
+<div>
+    <ul>
+        <li>John</li>
+        <li>Karl</li>
+        <li>Brandon</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li>Sam</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li>Glen</li>
+        <li>Tane</li>
+        <li>Ralph</li>
+        <li>David</li>
+    </ul>
+</div>
 
 
 <script>
-    $( ".myclass.otherclass" ).css( "border", "13px solid red" );
+    $( "ul li:nth-child(2)" ).append( " - 2nd!" );
 </script>
 
 

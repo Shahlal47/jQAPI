@@ -10,29 +10,35 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
 
     <style>
-        div, span {
-            width: 120px;
-            height: 40px;
-            float: left;
-            padding: 10px;
-            margin: 10px;
-            background-color: #EEEEEE;
+        span.fot {
+            color: red;
+            font-size: 120%;
+            font-style: italic;
         }
     </style>
-
 
 </head>
 
 <body>
 
-<div class="myclass">div class="notMe"</div>
-<div class="myclass otherclass">div class="myClass"</div>
-<span class="myclass otherclass">span class="myClass"</span>
 
+
+<div>
+    <span>Corey,</span>
+    <span>Yehuda,</span>
+    <span>Adam,</span>
+    <span>Todd</span>
+</div>
+<div>
+    <b>Nobody,</b>
+    <span>Jörn,</span>
+    <span>Scott,</span>
+    <span>Timo</span>
+</div>
 
 
 <script>
-    $( ".myclass.otherclass" ).css( "border", "13px solid red" );
+    $( "span:first-of-type" ).addClass( "fot" );
 </script>
 
 
