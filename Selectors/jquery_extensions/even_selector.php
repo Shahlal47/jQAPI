@@ -9,17 +9,24 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
 
     <style>
-
+        table {
+            background: #eee;
+        }
     </style>
 
 </head>
 
 <body>
 
-
+<table border="1">
+    <tr><td>Row with Index #0</td></tr>
+    <tr><td>Row with Index #1</td></tr>
+    <tr><td>Row with Index #2</td></tr>
+    <tr><td>Row with Index #3</td></tr>
+</table>
 
 <script>
-
+    $( "tr:even" ).css( "background-color", "#bbf" );
 </script>
 
 </body>

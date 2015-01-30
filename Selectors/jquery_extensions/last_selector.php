@@ -16,10 +16,14 @@
 
 <body>
 
-
+<table>
+    <tr><td>First Row</td></tr>
+    <tr><td>Middle Row</td></tr>
+    <tr><td>Last Row</td></tr>
+</table>
 
 <script>
-
+    $( "tr:last" ).css({ backgroundColor: "yellow", fontWeight: "bolder" });
 </script>
 
 </body>

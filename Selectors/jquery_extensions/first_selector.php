@@ -9,17 +9,24 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
 
     <style>
-
+        td {
+            color: blue;
+            font-weight: bold;
+        }
     </style>
 
 </head>
 
 <body>
 
-
+<table>
+    <tr><td>Row 1</td></tr>
+    <tr><td>Row 2</td></tr>
+    <tr><td>Row 3</td></tr>
+</table>
 
 <script>
-
+    $( "tr:first" ).css( "font-style", "italic" );
 </script>
 
 </body>
