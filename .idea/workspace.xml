@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fdc238f-1937-4e48-adfe-621392f9e543" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Selectors/jquery_extensions/hidden_selector.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Selectors/jquery_extensions/reset_selector.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Selectors/jquery_extensions/animated_selector.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Selectors/jquery_extensions/gt_selector.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jQAPI.iws" />
@@ -39,14 +39,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hidden_selector.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Selectors/jquery_extensions/hidden_selector.php">
+      <file leaf-file-name="gt_selector.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Selectors/jquery_extensions/gt_selector.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7356948" vertical-offset="0" max-vertical-offset="734">
-              <caret line="36" column="87" selection-start-line="36" selection-start-column="87" selection-end-line="36" selection-end-column="87" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.5313352" vertical-offset="0" max-vertical-offset="734">
+              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,6 +81,8 @@
         <option value="$PROJECT_DIR$/Selectors/jquery_extensions/even_selector.php" />
         <option value="$PROJECT_DIR$/Selectors/jquery_extensions/reset_selector.php" />
         <option value="$PROJECT_DIR$/Selectors/jquery_extensions/hidden_selector.php" />
+        <option value="$PROJECT_DIR$/Selectors/jquery_extensions/animated_selector.php" />
+        <option value="$PROJECT_DIR$/Selectors/jquery_extensions/gt_selector.php" />
       </list>
     </option>
   </component>
@@ -279,20 +279,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Selectors/jquery_extensions/file_selector.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86538464" vertical-offset="0" max-vertical-offset="885">
-          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Selectors/visibility_filter/hidden_selector.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4140481" vertical-offset="0" max-vertical-offset="930">
-          <caret line="51" column="87" selection-start-line="51" selection-start-column="87" selection-end-line="51" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Selectors/visibility_filter/visible_selector.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0536045" vertical-offset="0" max-vertical-offset="735">
@@ -636,6 +622,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Selectors/jquery_extensions/hidden_selector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5108992" vertical-offset="0" max-vertical-offset="915">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Selectors/jquery_extensions/animated_selector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.386921" vertical-offset="31" max-vertical-offset="765">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/123.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="480">
@@ -644,13 +648,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Selectors/jquery_extensions/hidden_selector.php">
+    <entry file="file://$PROJECT_DIR$/Selectors/jquery_extensions/gt_selector.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7356948" vertical-offset="0" max-vertical-offset="734">
-          <caret line="36" column="87" selection-start-line="36" selection-start-column="87" selection-end-line="36" selection-end-column="87" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.5313352" vertical-offset="0" max-vertical-offset="734">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
